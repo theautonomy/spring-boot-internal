@@ -133,6 +133,8 @@ run FirstInitializer
  o.s.c.a.ClassPathBeanDefinitionScanner   
  o.s.c.a.ClassPathBeanDefinitionScanner   
  o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
 ================================================
 run FirstImportSelector
 ================================================
@@ -493,6 +495,7 @@ run FirstImportSelector
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  a.ConfigurationClassBeanDefinitionReader 
+ a.ConfigurationClassBeanDefinitionReader 
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
  a.ConfigurationClassBeanDefinitionReader 
@@ -560,6 +563,8 @@ run FirstImportSelector
  a.ConfigurationClassBeanDefinitionReader 
  o.s.c.a.ConfigurationClassEnhancer       
  o.s.c.a.ConfigurationClassPostProcessor  
+ o.s.c.a.ConfigurationClassEnhancer       
+ o.s.c.a.ConfigurationClassPostProcessor  
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
@@ -624,6 +629,21 @@ run FirstImportSelector
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  .s.c.a.CommonAnnotationBeanPostProcessor 
+ .s.c.a.CommonAnnotationBeanPostProcessor 
+ .s.c.a.CommonAnnotationBeanPostProcessor 
+================================================
+run postConstruct BeanA
+================================================
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+================================================
+run beanA @Configuration
+================================================
  .s.c.a.CommonAnnotationBeanPostProcessor 
  .s.c.a.CommonAnnotationBeanPostProcessor 
 ================================================
@@ -752,6 +772,7 @@ run postConstruct BeanA
  o.s.c.e.EventListenerMethodProcessor     
  o.s.c.e.EventListenerMethodProcessor     
  o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
  o.s.b.f.s.DefaultListableBeanFactory     
  s.c.a.AnnotationConfigApplicationContext 
  o.s.b.f.s.DefaultListableBeanFactory     
@@ -760,6 +781,7 @@ run postConstruct BeanA
  o.s.c.support.DefaultLifecycleProcessor  
  o.s.c.support.DefaultLifecycleProcessor  
  o.s.b.f.s.DefaultListableBeanFactory     
+ .s.b.a.l.ConditionEvaluationReportLogger 
  com.example.demo.DemoApplication         
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.a.ApplicationAvailabilityBean      
