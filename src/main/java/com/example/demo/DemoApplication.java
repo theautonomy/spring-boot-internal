@@ -8,8 +8,11 @@ import org.springframework.context.annotation.Import;
 @Import({FirstImportSelector.class, FirstImportBeanDefinitionRegistrar.class})
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication springApplication = new SpringApplication(DemoApplication.class);
 
+        // Why? https://github.com/spring-projects/spring-boot/issues/27945
+        springApplication.addListeners(new FirstApplicationEventListener());
+        springApplication.run();
+    }
 }

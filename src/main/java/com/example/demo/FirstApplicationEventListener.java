@@ -2,9 +2,8 @@ package com.example.demo;
 
 import org.springframework.boot.context.event.SpringApplicationEvent;
 import org.springframework.context.ApplicationListener;
-import org.springframework.stereotype.Component;
 
-@Component
+// @Component
 public class FirstApplicationEventListener implements ApplicationListener<SpringApplicationEvent> {
 
     @Override

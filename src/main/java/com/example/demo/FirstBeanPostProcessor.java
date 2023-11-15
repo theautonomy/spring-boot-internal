@@ -6,9 +6,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class FirstBeanPostProcessor implements BeanPostProcessor {
-    
+
     @Override
-    public Object postProcessBeforeInitialization( Object bean, String beanName) throws BeansException {
+    public Object postProcessBeforeInitialization(Object bean, String beanName)
+            throws BeansException {
         if (bean instanceof BeanA) {
             System.out.println("================================================");
             System.out.println("run FirstBeanPostProcessor postProcessBeforeInitialization");
@@ -17,9 +18,10 @@ public class FirstBeanPostProcessor implements BeanPostProcessor {
         }
         return bean;
     }
- 
+
     @Override
-    public Object postProcessAfterInitialization( Object bean, String beanName) throws BeansException {
+    public Object postProcessAfterInitialization(Object bean, String beanName)
+            throws BeansException {
         if (bean instanceof BeanA) {
             System.out.println("================================================");
             System.out.println("run FirstBeanPostProcessor postProcessAfterInitialization");

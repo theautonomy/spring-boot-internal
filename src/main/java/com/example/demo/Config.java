@@ -13,5 +13,4 @@ public class Config {
         System.out.println("================================================");
         return new BeanA();
     }
-    
 }

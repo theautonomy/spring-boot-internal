@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import org.springframework.stereotype.Component;
+
 import jakarta.annotation.PostConstruct;
 
 @Component
@@ -12,5 +13,4 @@ public class BeanA {
         System.out.println("run postConstruct BeanA");
         System.out.println("================================================");
     }
-    
 }
