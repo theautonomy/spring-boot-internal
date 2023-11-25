@@ -5,7 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
-@Import({FirstImportSelector.class, FirstImportBeanDefinitionRegistrar.class})
+
+// The import can be here or in Config.java
+// @Import({FirstImportSelector.class, FirstDeferredImportSelector.class, FirstImportBeanDefinitionRegistrar.class})
 public class DemoApplication {
 
     public static void main(String[] args) {

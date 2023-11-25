@@ -1,9 +1,32 @@
+================================================
+run FirstApplicationEventListener
+
+================================================
+================================================
+run FirstApplicationEventListener
+
+================================================
  o.s.c.io.support.SpringFactoriesLoader   
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+
  o.s.c.io.support.SpringFactoriesLoader   
  o.s.c.a.ClassPathBeanDefinitionScanner   
-==>Custom FirstInitializer 
-==> com.example.demo.DemoApplication         
-==> com.example.demo.DemoApplication         
+================================================
+run FirstInitializer
+================================================
+================================================
+run FirstApplicationEventListener
+
+================================================
+ com.example.demo.DemoApplication         
+ com.example.demo.DemoApplication         
  o.s.boot.SpringApplication               
  o.s.c.a.ClassPathBeanDefinitionScanner   
  uePropertySourceEnvironmentPostProcessor 
@@ -96,6 +119,10 @@
  o.s.b.c.config.ConfigDataEnvironment     
  o.s.b.c.config.ConfigDataEnvironment     
  o.s.b.c.config.ConfigDataEnvironment     
+================================================
+run FirstApplicationEventListener
+
+================================================
  s.c.a.AnnotationConfigApplicationContext 
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
@@ -127,8 +154,34 @@
  o.s.c.a.ClassPathBeanDefinitionScanner   
  o.s.c.a.ClassPathBeanDefinitionScanner   
  o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+ o.s.c.a.ClassPathBeanDefinitionScanner   
+================================================
+run FirstImportSelector
+================================================
  o.s.c.io.support.SpringFactoriesLoader   
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.a.condition.OnClassCondition       
+ o.s.b.a.condition.OnClassCondition       
+ o.s.b.a.condition.OnClassCondition       
+ o.s.b.a.condition.OnClassCondition       
+ o.s.b.a.condition.OnClassCondition       
  o.s.b.a.condition.OnClassCondition       
  o.s.b.a.condition.OnClassCondition       
  o.s.b.a.condition.OnClassCondition       
@@ -262,6 +315,7 @@
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.a.c.OnWebApplicationCondition      
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.a.condition.OnBeanCondition        
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.a.AutoConfigurationImportSelector  
  o.s.c.io.support.SpringFactoriesLoader   
@@ -478,11 +532,42 @@
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.a.condition.OnClassCondition       
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+================================================
+run FirstDeferredImportSelector
+================================================
+ a.ConfigurationClassBeanDefinitionReader 
+================================================
+run FirstImportBeanDefinitionRegistrar
+================================================
  a.ConfigurationClassBeanDefinitionReader 
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
@@ -526,6 +611,7 @@
  a.ConfigurationClassBeanDefinitionReader 
  a.ConfigurationClassBeanDefinitionReader 
  a.ConfigurationClassBeanDefinitionReader 
+ a.ConfigurationClassBeanDefinitionReader 
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
  a.ConfigurationClassBeanDefinitionReader 
@@ -535,22 +621,64 @@
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
  a.ConfigurationClassBeanDefinitionReader 
+ a.ConfigurationClassBeanDefinitionReader 
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
+ a.ConfigurationClassBeanDefinitionReader 
+ a.ConfigurationClassBeanDefinitionReader 
+ o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.a.condition.OnThreadingCondition   
+ o.s.b.f.s.DefaultListableBeanFactory     
+ a.ConfigurationClassBeanDefinitionReader 
+ o.s.b.a.condition.OnBeanCondition        
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.a.condition.OnBeanCondition        
+ o.s.b.f.s.DefaultListableBeanFactory     
+ a.ConfigurationClassBeanDefinitionReader 
+ o.s.b.a.condition.OnThreadingCondition   
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.a.condition.OnThreadingCondition   
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ a.ConfigurationClassBeanDefinitionReader 
  a.ConfigurationClassBeanDefinitionReader 
  o.s.b.a.condition.OnClassCondition       
  o.s.b.f.s.DefaultListableBeanFactory     
  a.ConfigurationClassBeanDefinitionReader 
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
+ a.ConfigurationClassBeanDefinitionReader 
+ a.ConfigurationClassBeanDefinitionReader 
+ o.s.b.a.condition.OnBeanCondition        
+ o.s.b.f.s.DefaultListableBeanFactory     
+ a.ConfigurationClassBeanDefinitionReader 
+ a.ConfigurationClassBeanDefinitionReader 
+ o.s.b.a.condition.OnBeanCondition        
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.a.condition.OnThreadingCondition   
+ o.s.b.f.s.DefaultListableBeanFactory     
+ a.ConfigurationClassBeanDefinitionReader 
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.a.condition.OnBeanCondition        
  o.s.b.f.s.DefaultListableBeanFactory     
  a.ConfigurationClassBeanDefinitionReader 
+ o.s.b.a.condition.OnBeanCondition        
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+================================================
+run FirstBeanDefinitionRegistryPostProcessor's postProcessBeanDefinitionRegistry
+================================================
  o.s.c.a.ConfigurationClassEnhancer       
  o.s.c.a.ConfigurationClassPostProcessor  
+ o.s.c.a.ConfigurationClassEnhancer       
+ o.s.c.a.ConfigurationClassPostProcessor  
+================================================
+run FirstBeanDefinitionRegistryPostProcessor's postPrcessBeanFactory
+================================================
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
@@ -570,6 +698,9 @@
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+================================================
+run FirstBeanFactoryPostProcessor
+================================================
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
@@ -583,6 +714,9 @@
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
  o.s.beans.CachedIntrospectionResults     
  o.s.beans.CachedIntrospectionResults     
  o.s.beans.CachedIntrospectionResults     
@@ -599,6 +733,9 @@
  o.s.beans.CachedIntrospectionResults     
  o.s.beans.CachedIntrospectionResults     
  o.s.beans.CachedIntrospectionResults     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  s.c.a.AnnotationConfigApplicationContext 
  s.c.a.AnnotationConfigApplicationContext 
@@ -614,6 +751,20 @@
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+ .s.c.a.CommonAnnotationBeanPostProcessor 
+ .s.c.a.CommonAnnotationBeanPostProcessor 
+================================================
+run FirstBeanPostProcessor postProcessBeforeInitialization
+BeanA - FirstBeanPostProcessor postProcessBeforeInitialization
+================================================
+ .s.c.a.CommonAnnotationBeanPostProcessor 
+================================================
+run postConstruct BeanA
+================================================
+================================================
+run FirstBeanPostProcessor postProcessAfterInitialization
+BeanA - FirstBeanPostProcessor postProcessAfterInitialization
+================================================
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
@@ -624,6 +775,22 @@
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+================================================
+run beanA @Configuration
+================================================
+ .s.c.a.CommonAnnotationBeanPostProcessor 
+================================================
+run FirstBeanPostProcessor postProcessBeforeInitialization
+BeanA - FirstBeanPostProcessor postProcessBeforeInitialization
+================================================
+ .s.c.a.CommonAnnotationBeanPostProcessor 
+================================================
+run postConstruct BeanA
+================================================
+================================================
+run FirstBeanPostProcessor postProcessAfterInitialization
+BeanA - FirstBeanPostProcessor postProcessAfterInitialization
+================================================
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
@@ -724,6 +891,78 @@
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
+ o.s.c.e.EventListenerMethodProcessor     
  o.s.c.e.EventListenerMethodProcessor     
  o.s.c.e.EventListenerMethodProcessor     
  o.s.c.e.EventListenerMethodProcessor     
@@ -741,21 +980,793 @@
  s.c.a.AnnotationConfigApplicationContext 
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.s.concurrent.ThreadPoolTaskExecutor  
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.c.support.DefaultLifecycleProcessor  
  o.s.c.support.DefaultLifecycleProcessor  
  o.s.c.support.DefaultLifecycleProcessor  
  o.s.c.support.DefaultLifecycleProcessor  
  o.s.b.f.s.DefaultListableBeanFactory     
  .s.b.a.l.ConditionEvaluationReportLogger 
-==> com.example.demo.DemoApplication         
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+
+-----------------
+
+
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+
+      - @ConditionalOnMissingClass did not find unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+
+
+
+
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+
+
+
+
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+
+
+
+
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+
+      - @ConditionalOnProperty (spring.sql.init.enabled) matched (OnPropertyCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on SqlInitializationAutoConfiguration.SqlInitializationModeCondition.ModeIsNever @ConditionalOnProperty (spring.sql.init.mode=never) did not find property 'mode' (SqlInitializationAutoConfiguration.SqlInitializationModeCondition)
+
+
+
+
+
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+
+
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+
+
+
+
+
+
+
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+
+
+
+
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+
+
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+
+
+
+
+
+
+
+
+-----------------
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.jms.ConnectionFactory' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.jms.ConnectionFactory' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.batch.core.launch.JobLauncher' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.cache2k.Cache2kBuilder' (OnClassCondition)
+
+
+
+
+
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.github.benmanes.caffeine.cache.Caffeine' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.cassandra.ReactiveSession' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.http.codec.CodecConfigurer' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'co.elastic.clients.elasticsearch.ElasticsearchClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.client.elc.ElasticsearchTemplate' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.repository.ElasticsearchRepository' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClientBuilder' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+
+
+         - @ConditionalOnWebApplication did not find reactive or servlet web application classes (OnWebApplicationCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.Servlet' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'freemarker.template.Configuration' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.querydsl.core.Query' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.querydsl.core.Query' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.JakartaWebServlet' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.persistence.EntityManager' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.http.server.reactive.HttpHandler' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.EntityModel' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'javax.cache.Caching' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+
+
+         - @ConditionalOnSingleCandidate did not find required type 'org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate' (OnBeanCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.jms.Message' (OnClassCondition)
+
+
+
+         - @ConditionalOnProperty (spring.jmx.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
+         - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.json.bind.Jsonb' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.transaction.Transaction' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.activation.MimeType' (OnClassCondition)
+
+
+
+         - @ConditionalOnSingleCandidate did not find required type 'org.springframework.mail.javamail.JavaMailSenderImpl' (OnBeanCondition)
+
+
+
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.MultipartConfigElement' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'io.netty.util.NettyRuntime' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.authorization.OAuth2Authorization' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.authorization.OAuth2Authorization' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.authentication.BearerTokenAuthenticationToken' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+
+
+
+
+
+
+
+
+
+
+         - @ConditionalOnClass did not find required class 'org.apache.pulsar.client.api.PulsarClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.apache.pulsar.client.api.PulsarClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.r2dbc.core.R2dbcEntityTemplate' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.r2dbc.connection.init.DatabasePopulator' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.r2dbc.connection.R2dbcTransactionManager' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.rsocket.core.SecuritySocketAcceptorInterceptor' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'io.rsocket.core.RSocketServer' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'io.netty.buffer.PooledByteBufAllocator' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'co.elastic.clients.transport.ElasticsearchTransport' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.client.elc.ReactiveElasticsearchClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.http.codec.multipart.DefaultPartHttpMessageReader' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.http.ReactiveHttpInputMessage' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Hooks' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.client.RestClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.ServletRequest' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+
+
+         - @ConditionalOnProperty (spring.application.admin.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.data.web.PageableHandlerMethodArgumentResolver' (OnClassCondition)
+
+
+
+
+
+
+
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.spring6.SpringTemplateEngine' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.validation.executable.ExecutableValidator' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.Servlet' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.oxm.Marshaller' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Mono' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.Servlet' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.servlet.Servlet' (OnClassCondition)
+
+
+
+         - @ConditionalOnClass did not find required class 'jakarta.transaction.TransactionManager' (OnClassCondition)
+
+
+
+-----------
+
+    None
+
+
+
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+ com.example.demo.DemoApplication         
+================================================
+run FirstApplicationEventListener
+
+================================================
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.a.ApplicationAvailabilityBean      
+================================================
+run FirstApplicationEventListener
+
+================================================
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.a.ApplicationAvailabilityBean      
  s.c.a.AnnotationConfigApplicationContext 
  o.s.b.f.s.DefaultListableBeanFactory     
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.c.support.DefaultLifecycleProcessor  
  o.s.c.support.DefaultLifecycleProcessor  
  o.s.c.support.DefaultLifecycleProcessor  
  o.s.c.support.DefaultLifecycleProcessor  
  o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.support.DisposableBeanAdapter    
+ o.s.s.concurrent.ThreadPoolTaskExecutor  
+ o.s.b.f.s.DefaultListableBeanFactory     
+ o.s.b.f.support.DisposableBeanAdapter    
  o.s.b.f.s.DefaultListableBeanFactory     
