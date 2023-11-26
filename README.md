@@ -1,40 +1,7 @@
 ### Get the list of classes during startup
 $ cut -d: -f4 < t.txt | cut -d] -f2 > startup-classes.txt
 
-
-* Further read
-  * https://xinchen.blog.csdn.net/article/details/105061662?spm=1001.2014.3001.5502 
-  * https://segmentfault.com/u/lenve/articles?sort=newest
-  * https://www.cnblogs.com/dongguangming/category/1688134.html 
-
-* Auto-configuration in Spring Boot 
-  * https://segmentfault.com/a/1190000043859515
-
-* ImportBeanDefinitionPostRegistrar
-  * https://www.jianshu.com/p/357eab9ec916
-
-* Bean Definition
-  * https://www.jianshu.com/p/17f116da9a70
-
-* Ways to register bean - good article
-  * https://www.cnblogs.com/dongguangming/p/12767135.html
-  * https://www.cnblogs.com/dongguangming/p/12792789.html
-
-* Spring中@Import的三种情况
-  * https://www.cnblogs.com/dongguangming/p/12963060.html
-
-* Spring IOC 容器源码分析
-  * https://www.cnblogs.com/dongguangming/p/12738061.html
-
-* Spring AOP 源码解析
-  * https://www.javadoop.com/post/spring-aop-source
-
-* Spring MVC
-  * https://www.cnblogs.com/dongguangming/p/12624070.html
-
-
 ### Notes
-
 | Component | Note 1 | Note 2 | Note 3 |
 | --- | --- | --- | --- |
 | ApplicationListener | ApplicationStartingEvent |   |   |
@@ -109,3 +76,85 @@ gives you a chance to process an instance of a bean created by the IoC container
 
 This converter should be registered as a Spring Bean and should also be annotated with @ConfigurationPropertiesBinding which is a Qualifier annotation. The ConfigurationPropertiesBindingPostProcessor is responsible to bind all external properties to the beans annotated with @ConfigurationProperties. This BeanPostProcessor also detects custom converters (besides the default ones) annotated with @ConfigurationPropertiesBinding for type conversion.
 ```
+
+### Articles
+* Further read
+  * https://xinchen.blog.csdn.net/article/details/105061662?spm=1001.2014.3001.5502 
+  * https://segmentfault.com/u/lenve/articles?sort=newest
+  * https://www.cnblogs.com/dongguangming/category/1688134.html 
+
+* Auto-configuration in Spring Boot 
+  * https://segmentfault.com/a/1190000043859515
+
+* ImportBeanDefinitionPostRegistrar
+  * https://www.jianshu.com/p/357eab9ec916
+
+* Bean Definition
+  * https://www.jianshu.com/p/17f116da9a70
+
+* Ways to register bean - good article
+  * https://www.cnblogs.com/dongguangming/p/12767135.html
+  * https://www.cnblogs.com/dongguangming/p/12792789.html
+
+* Spring中@Import的三种情况
+  * https://www.cnblogs.com/dongguangming/p/12963060.html
+
+* Spring IOC 容器源码分析
+  * https://www.cnblogs.com/dongguangming/p/12738061.html
+
+* Spring AOP 源码解析
+  * https://www.javadoop.com/post/spring-aop-source
+
+* Spring MVC
+  * https://www.cnblogs.com/dongguangming/p/12624070.html
+
+
+### Articles
+* https://blog.csdn.net/qq1049545450/article/details/112957659?spm=1001.2014.3001.5502
+* https://blog.csdn.net/qq1049545450/article/details/112977838 (contains a nice start up diagram)
+* https://blog.csdn.net/qq1049545450/article/details/113104783
+
+* https://blog.csdn.net/qq1049545450/article/details/113247619?spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-113247619-blog-121534204.235%5Ev38%5Epc_relevant_sort_base3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-113247619-blog-121534204.235%5Ev38%5Epc_relevant_sort_base3&utm_relevant_index=11
+
+* https://blog.csdn.net/yiding123/article/details/121534204
+* https://blog.csdn.net/yiding124/article/details/121475769?spm=1001.2014.3001.5502
+
+* how spring work: https://blog.csdn.net/dong19891210/article/details/106324879?spm=1001.2014.3001.5502
+* how import works: https://blog.csdn.net/dong19891210/article/details/106346447 (good)
+* enable: https://blog.csdn.net/dong19891210/article/details/105931356
+* create bean: https://blog.csdn.net/dong19891210/article/details/105798650
+
+* how enableautoconfiguration works: https://www.javadevjournal.com/spring-boot/how-spring-boot-auto-configuration-works/
+
+* how spring boot auto configuration works: https://dzone.com/articles/how-springboot-autoconfiguration-magic-works
+* Very good - Spring Boot - How auto configuration works? https://www.logicbig.com/tutorials/spring-framework/spring-boot/auto-config-mechanism.html
+
+* how spring boot works: https://www.marcobehler.com/guides/spring-boot-autoconfiguration
+* how spring security: https://www.marcobehler.com/guides/spring-security
+* how oauth: https://www.marcobehler.com/guides/spring-security-oauth2 
+
+---
+* How spring boot auto configuration works: https://thepracticaldeveloper.com/spring-boot-autoconfiguration/ (good)
+
+*
+  * SpringBoot扩展点之EnvironmentPostProcessor: https://blog.csdn.net/dong19891210/article/details/106436364?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-106436364-blog-121534204.235%5Ev38%5Epc_relevant_sort_base3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-106436364-blog-121534204.235%5Ev38%5Epc_relevant_sort_base3&utm_relevant_index=10
+  * Spring boot如何工作 https://blog.csdn.net/dong19891210/article/details/106324879?spm=1001.2014.3001.5502
+
+## logicbig examples
+* https://www.logicbig.com/how-to/spring-framework.html
+* https://www.logicbig.com/how-to/spring-boot.html
+* https://www.logicbig.com/tutorials/spring-framework/spring-boot.html
+* https://www.logicbig.com/tutorials/spring-framework.html
+  * https://www.logicbig.com/tutorials/spring-framework/spring-core.html
+    * https://www.logicbig.com/tutorials/spring-framework/spring-core/alias-for-annotation.html
+    * https://www.logicbig.com/tutorials/spring-framework/spring-core/import-bean-registrar.html
+    * https://www.logicbig.com/tutorials/spring-framework/spring-core/deferred-import-selector.html
+    * https://www.logicbig.com/tutorials/spring-framework/spring-core/import-selector.html
+    * https://www.logicbig.com/tutorials/spring-framework/spring-core/bean-definition.html
+* how auto configuration works: https://www.logicbig.com/tutorials/spring-framework/spring-boot/auto-config-mechanism.html
+* why all methods will return the same instance at multiple calls : https://www.logicbig.com/tutorials/spring-framework/spring-core/java-config.html
+### ImportBeanDefinitionRegistrar Examples
+* https://www.logicbig.com/how-to/code-snippets/jcode-spring-framework-importbeandefinitionregistrar.html
+* https://github.com/mbhave/non-magic-demo.git
+### ImportSelector
+* https://www.logicbig.com/how-to/code-snippets/jcode-spring-framework-importselector.html
