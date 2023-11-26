@@ -25,39 +25,27 @@ $ cut -d: -f4 < t.txt | cut -d] -f2 > startup-classes.txt
   * https://www.cnblogs.com/dongguangming/p/12624070.html
 
 
-### Non-magic-demo notes
-Application
-  --> @MagicApplication
-    --> @Configuration
-    --> @ComponentScan
-    --> @EnableMagicAutoConfiguration
-      --> @Import(MagicAutoConfigurationImportSelector.class)
-        ==> MagicAutoConfigurationImportSelector.class
-          --> loads MagicConfiguration => load config.MagicConfiguration.imports file
-            --> Annotate
-              --> MvcConfiguration
-                --> @EnableWebMvc
-              --> DispatcherServletConfiguration
-                --> Create DispatcherServlet bean
-              --> TomcatConfiguration
-                --> create TomcatServletWebServerFactory bean
-                --> Autowired with ServerProperties
-                  --> Use port number in ServiceProperties to start tomcat engine
-  --> @EnableMagicProperties(ServerProperties.class)
-    --> @Import(EnableMagicPropertiesRegistrar.class)
-      --> EnableMagicPropertiesRegistrar
-        --> Find annotation attributes of EnableMagicProperties.class, which is ServerProperties.class
-        --> Register bean of ServerProperties.class (found from the annotation of @EnableMagicProperties)
+### Notes
 
-spring.factories
-  --> MagicPropertiesPostProcessor
-    --> load and bind properties from magic.properties
-
-TomcatConfiguration
-  --> @ConditionalOnAClass(className = "org.apache.catalina.startup.Tomcat")
-    --> ConditionalOnAClass
-UndertowConfiguration
-  --> @ConditionalOnAClass(className = "io.undertow.Undertow")
-    --> ConditionalOnAClass
-
-PropertyPlaceholderConfiguration
+| Component | Note 1 | Note 2 | Note 3 |
+| --- | --- | --- | --- |
+| ApplicationListener | ApplicationStartingEvent |   |   |
+| ApplicationListener | ApplicationEnvironmentPreparedEvent |   |   |
+| ApplicationContextInitializer |     |   |   |
+| ApplicationListener | ApplicationContextInitializedEvent |   |   |
+| ApplicationListener | ApplicationPreparedEvent |   |   |
+| ImportSelector |     |   |   |
+| DeferredImportSelector |     |   |   |
+| ImportBeanDefinitionRegistrar |     |   |   |
+| BeanDefinitionRegistryPostProcessor's postProcessBeanDefinitionRegistry |     |   |   |
+| BeanDefinitionRegistryPostProcessor's postPrcessBeanFactory |     |   |   |
+| BeanFactoryPostProcessor |     |   |   |
+| BeanPostProcessor postProcessBeforeInitialization |     |   |   |
+| @PostConstruct |     |   |   |
+| BeanPostProcessor postProcessAfterInitialization |     |   |   |
+| @Bean within @Configuration |     |   |   |
+| BeanPostProcessor postProcessBeforeInitialization |     |   |   |
+| @PostConstruct |     |   |   |
+| BeanPostProcessor postProcessAfterInitialization |     |   |   |
+| ApplicationListener | ApplicationStartedEvent |   |   |
+| ApplicationListener | ApplicationReadyEvent |   |   |
