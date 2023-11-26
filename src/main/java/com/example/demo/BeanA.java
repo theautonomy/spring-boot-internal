@@ -10,7 +10,7 @@ public class BeanA {
     @PostConstruct
     void postConstruct() {
         System.out.println("================================================");
-        System.out.println("run postConstruct BeanA");
+        System.out.println("run postConstruct BeanA " + this.hashCode());
         System.out.println("================================================");
     }
 }

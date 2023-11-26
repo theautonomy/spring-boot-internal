@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 
 // This doesn't make a difference
-// ApplicationContextInitializer runs before context is ready
+// Since ApplicationContextInitializer runs before context is ready
 // @Component
 public class FirstInitializer
         implements ApplicationContextInitializer<ConfigurableApplicationContext> {

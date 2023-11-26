@@ -15,6 +15,11 @@ public class DemoApplication {
 
         // Why? https://github.com/spring-projects/spring-boot/issues/27945
         springApplication.addListeners(new FirstApplicationEventListener());
+        
+        // Another way to add ApplicationContextInitializer
+        // Or define the following in application.properties
+        // context.initializer.classes=com.example.demo.FirstInitializer
+        // springApplication.addInitializers(new FirstInitializer());
         springApplication.run();
     }
 }

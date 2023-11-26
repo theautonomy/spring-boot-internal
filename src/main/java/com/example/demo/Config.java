@@ -11,9 +11,10 @@ public class Config {
 
     @Bean
     BeanA beanAFromConfig() {
+        BeanA beanA = new BeanA();
         System.out.println("================================================");
-        System.out.println("run beanA @Configuration");
+        System.out.println("run beanA @Configuration " + beanA.hashCode());
         System.out.println("================================================");
-        return new BeanA();
+        return beanA;
     }
 }

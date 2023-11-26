@@ -13,7 +13,7 @@ public class FirstBeanPostProcessor implements BeanPostProcessor {
         if (bean instanceof BeanA) {
             System.out.println("================================================");
             System.out.println("run FirstBeanPostProcessor postProcessBeforeInitialization");
-            System.out.println("BeanA - FirstBeanPostProcessor postProcessBeforeInitialization");
+            System.out.println("BeanA - FirstBeanPostProcessor postProcessBeforeInitialization " + bean.hashCode());
             System.out.println("================================================");
         }
         return bean;
@@ -25,7 +25,7 @@ public class FirstBeanPostProcessor implements BeanPostProcessor {
         if (bean instanceof BeanA) {
             System.out.println("================================================");
             System.out.println("run FirstBeanPostProcessor postProcessAfterInitialization");
-            System.out.println("BeanA - FirstBeanPostProcessor postProcessAfterInitialization");
+            System.out.println("BeanA - FirstBeanPostProcessor postProcessAfterInitialization " + bean.hashCode());
             System.out.println("================================================");
         }
         return bean;
