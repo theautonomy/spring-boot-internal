@@ -5,6 +5,7 @@ $ cut -d: -f4 < t.txt | cut -d] -f2 > startup-classes.txt
 | Component | Note 1 | Note 2 | Note 3 |
 | --- | --- | --- | --- |
 | ApplicationListener | ApplicationStartingEvent |   |   |
+| EnvironmentPostProcessor |  | [https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.application.customize-the-environment-or-application-context]<br>[https://dzone.com/articles/a-post-processor-for-spring-boot]<br>[https://www.woolha.com/tutorials/spring-boot-using-environmentpostprocessor-examples]<br>[https://www.baeldung.com/spring-boot-environmentpostprocessor] |   |
 | ApplicationListener | ApplicationEnvironmentPreparedEvent |   |   |
 | ApplicationContextInitializer | Runtime setup spring profile<br>loading extra properties file | [https://www.logicbig.com/tutorials/spring-framework/spring-core/tests-context-initializer.html]<br>[https://www.java-success.com/spring-loading-properties-files-with-applicationcontextinitializer/]   |   |
 | ApplicationListener | ApplicationContextInitializedEvent |   |   |
@@ -26,6 +27,15 @@ $ cut -d: -f4 < t.txt | cut -d] -f2 > startup-classes.txt
 | ApplicationListener | ApplicationReadyEvent |   |   |
 
 ```
+* EnvironmentPostProcessor 
+which allows customization of the Environment object before 
+the application context is refreshed. There are several 
+things you can do using the interface. For example, it can 
+be used to set profiles, set property sources based on the 
+values from environment variables, as well as validating 
+environment properties. In this tutorial, I'm going to show 
+you how to use the interface.
+
 * ApplicationContextInitializer
 
 What is an ApplicationContextInitializer. It is essentially code that gets 
@@ -205,3 +215,65 @@ with @ConfigurationPropertiesBinding for type conversion.
 * https://github.com/mbhave/non-magic-demo.git
 ### ImportSelector
 * https://www.logicbig.com/how-to/code-snippets/jcode-spring-framework-importselector.html
+
+### Spring boot start up 
+```
+Springboot2.0.3 release.jar
+spring.factories
+////////////////////////////////////////////////////////////////////////////////////////////
+# PropertySource Loaders
+org.springframework.boot.env.PropertySourceLoader=\
+org.springframework.boot.env.PropertiesPropertySourceLoader,\
+org.springframework.boot.env.YamlPropertySourceLoader
+
+# Run Listeners----->第一个启动的Listener
+org.springframework.boot.SpringApplicationRunListener=\
+org.springframework.boot.context.event.EventPublishingRunListener
+
+# Error Reporters
+org.springframework.boot.SpringBootExceptionReporter=\
+org.springframework.boot.diagnostics.FailureAnalyzers
+
+# Application Context Initializers
+org.springframework.context.ApplicationContextInitializer=\
+org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer,\
+org.springframework.boot.context.ContextIdApplicationContextInitializer,\
+org.springframework.boot.context.config.DelegatingApplicationContextInitializer,\
+org.springframework.boot.web.context.ServerPortInfoApplicationContextInitializer
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+org.springframework.boot.ClearCachesApplicationListener,\
+org.springframework.boot.builder.ParentContextCloserApplicationListener,\
+org.springframework.boot.context.FileEncodingApplicationListener,\
+org.springframework.boot.context.config.AnsiOutputApplicationListener,\
+org.springframework.boot.context.config.ConfigFileApplicationListener,\
+org.springframework.boot.context.config.DelegatingApplicationListener,\
+org.springframework.boot.context.logging.ClasspathLoggingApplicationListener,\
+org.springframework.boot.context.logging.LoggingApplicationListener,\
+org.springframework.boot.liquibase.LiquibaseServiceLocatorApplicationListener
+
+# Environment Post Processors
+org.springframework.boot.env.EnvironmentPostProcessor=\
+org.springframework.boot.cloud.CloudFoundryVcapEnvironmentPostProcessor,\
+org.springframework.boot.env.SpringApplicationJsonEnvironmentPostProcessor,\
+org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor
+
+# Failure Analyzers
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+org.springframework.boot.diagnostics.analyzer.BeanCurrentlyInCreationFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.BeanNotOfRequiredTypeFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.UnboundConfigurationPropertyFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.ConnectorStartFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.NoUniqueBeanDefinitionFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.PortInUseFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.ValidationExceptionFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.InvalidConfigurationPropertyNameFailureAnalyzer,\
+org.springframework.boot.diagnostics.analyzer.InvalidConfigurationPropertyValueFailureAnalyzer
+
+# FailureAnalysisReporters
+org.springframework.boot.diagnostics.FailureAnalysisReporter=\
+org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter
+```
