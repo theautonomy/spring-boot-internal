@@ -1,5 +1,6 @@
 ### Get the list of classes during startup
-$ cut -d: -f4 < t.txt | cut -d] -f2 > startup-classes.txt
+$ cut -d: -f4-5 < t.txt | cut -d] -f2 > startup-classes.txt
+
 
 ### Notes
 | Component | Note 1 | Note 2 | Note 3 |
@@ -138,6 +139,8 @@ with @ConfigurationPropertiesBinding for type conversion.
 * Further read
   * https://xinchen.blog.csdn.net/article/details/105061662?spm=1001.2014.3001.5502 
   * https://segmentfault.com/u/lenve/articles?sort=newest
+    * https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI1NDY0MTkzNQ==&action=getalbum&album_id=2369296394722934787&scene=173&from_msgid=2247505235&from_itemidx=1&count=3&nolastread=1#wechat_redirect
+    * https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI1NDY0MTkzNQ==&action=getalbum&album_id=2107713769630941184&scene=173&from_msgid=2247505235&from_itemidx=1&count=3&nolastread=1#wechat_redirect
   * https://www.cnblogs.com/dongguangming/category/1688134.html 
 
 * Auto-configuration in Spring Boot 
