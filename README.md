@@ -11,7 +11,7 @@ $ cut -d: -f4-5 < t.txt | cut -d] -f2 > startup-classes.txt
 | ApplicationContextInitializer | Runtime setup spring profile<br>loading extra properties file | [https://www.logicbig.com/tutorials/spring-framework/spring-core/tests-context-initializer.html]<br>[https://www.java-success.com/spring-loading-properties-files-with-applicationcontextinitializer/]   |   |
 | ApplicationListener | ApplicationContextInitializedEvent |   |   |
 | ApplicationListener | ApplicationPreparedEvent |   |   |
-| ImportSelector | @Import<br>@EnableBlahBlah | [https://www.logicbig.com/tutorials/spring-framework/spring-core/import-selector.html]<br>[https://gist.github.com/bijukunjummen/08f73cb7b3055d65a729]<br>[https://gorkemgok.com/enable-annotations-for-better-spring-libraries-5a467a028e06]  |   |
+| ImportSelector | @Import<br>@EnableBlahBlah | [https://www.logicbig.com/tutorials/spring-framework/spring-core/import-selector.html]<br>[https://gist.github.com/bijukunjummen/08f73cb7b3055d65a729]<br>[https://gorkemgok.medium.com/enable-annotations-for-better-spring-libraries-5a467a028e06]  |   |
 | DeferredImportSelector |     | [https://www.logicbig.com/tutorials/spring-framework/spring-core/deferred-import-selector.html]<br>[https://www.cnblogs.com/xfeiyun/p/15675230.html]  |   |
 | ImportBeanDefinitionRegistrar |     | [https://www.logicbig.com/tutorials/spring-framework/spring-core/import-bean-registrar.html]<br>[https://segmentfault.com/a/1190000040585229]  |   |
 | BeanDefinitionRegistryPostProcessor's postProcessBeanDefinitionRegistry |     | [https://www.logicbig.com/tutorials/spring-framework/spring-core/bean-definition.html]  |   |
